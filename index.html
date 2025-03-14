@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min avis</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container {
+            max-width: 900px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 300px 300px 300px 300px 300px;
+            gap: 5px;
+            margin: auto;
+        }
+
+        article {
+            background-color: aquamarine;
+            grid-column: span 3;
+        }
+
+        .small {
+            grid-column: span 4;
+        }
+
+        article.medium {
+            grid-column: span 6;
+        }
+
+        article.large {
+            grid-column: span 8;
+        }
+
+        article.xlarge {
+            grid-column: span 12;
+        }
+    </style>
 </head>
+
 <body>
 
     <header></header>
@@ -13,14 +47,49 @@
         <h1>Velkommen til min avis</h1>
         <h2>Hei</h2>
 
-        
+
+        <div class="container">
+            <article class="medium">
+                Artikkel 1
+            </article>
+
+            <article class="medium">
+                Artikkel 1
+            </article>
+
+            <article class="large">
+                Artikkel 1
+            </article>
+
+            <article class="small">
+                Artikkel 1
+            </article>
+
+            <article class="xlarge">
+                Artikkel 1
+            </article>
+
+            <article class="small">
+                Artikkel 1
+            </article>
+
+            <article class="small">
+                Artikkel 1
+            </article>
+            <article class="small">
+                Artikkel 1
+            </article>
+
+        </div>
+
     </main>
 
     <footer>
 
     </footer>
-    
+
 
     <script src="script.no"></script>
 </body>
+
 </html>
