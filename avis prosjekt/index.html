@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vasi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="avisstyle.css">
+</head>
+
+<body>
+
+    <nav class="bikkje">
+        <a href="#home">Home
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="#news">News
+            <i class="fa-solid fa-landmark"></i>
+        </a>
+        <div class="dropdown">
+            <button class="dropbtn" id="knapp1">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="maine">
+
+        <div class="over">
+
+            <div class="viktig">
+                <h1>hva skjer i verden nå</h1>
+
+
+            </div>
+
+            <div class="bokser blippy">
+
+
+                <div id="overboks1" class="invisible_text">
+                    <a href="https://www.nytimes.com/2025/02/19/technology/microsoft-quantum-computing-topological-qubit.html"
+                        class="full-link">
+                        <p>Microsoft hevder å ha utviklet en ny tilstand av materie for å bygge en mer stabil
+                            kvantedatamaskin. Selskapet har laget en «topologisk qubit» ved å kombinere halvledere og
+                            superledere i en databrikke som fungerer ved ekstremt lave temperaturer.
+
+                            Teknologien kan gjøre kvantedatamaskiner mer stabile og enklere å feilkorrigere enn dagens
+                            metoder. Foreløpig har Microsoft kun laget åtte qubits, og de kan ennå ikke utføre praktiske
+                            beregninger. Noen forskere er skeptiske til om Microsoft virkelig har oppnådd dette
+                            gjennombruddet, men hvis det stemmer, kan det gi selskapet et stort forsprang i
+                            kvantekappløpet.</p>
+                    </a>
+                </div>
+
+                <div id="overboks2" class="invisible_text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, consequuntur!
+                    </p>
+
+                </div>
+                <div id="overboks3" class="invisible_text">
+                    <p>
+                        Et sykehus i North Yorkshir bruker nå AI teknologi for å oppdage lungekreft.
+                    </p>
+
+                </div>
+                <div id="overboks4" class="invisible_text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, consequuntur!
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="conteinarkel">
+
+            <div class="hoved">
+
+
+                <div class="liten"> </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <section id="footerid">
+        <div class="footer">
+            <div class="main">
+                <div class="footer-liste footer-linker">
+                    <h3>Kontakt oss</h3>
+                    <ul>
+                        <li>Mail: </li>
+                        <li>Telefon:</li>
+                        <li>Kontor: </li>
+                    </ul>
+                </div>
+                <div class="footer-liste footer-linker">
+                    <h3>Om oss. Vår utvikling</h3>
+                    <ul>
+                        <li>...</li>
+                    </ul>
+                    <ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script>
+
+        let dropp = document.querySelector(".dropdown .dropdown-content")
+        let knapp = document.querySelector(".dropbtn")
+
+        knapp.addEventListener("click", funk)
+
+        function funk() {
+            dropp.classList.toggle("blippern")
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

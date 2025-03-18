@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*topppiss*/
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+
+    height: 70px;
+    background-color: aqua;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+
+}
+
+.bikkje{
+    
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    
+    padding: 10px 0; 
+    z-index: 1000; 
+}
+
+
+.bikkje a {
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: aquamarine;
+    padding: 5px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+
+.dropdown-content {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    background-color: aquamarine;
+    display: none;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+
+}
+
+
+.blippern {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    font-size: 25px;
+
+}
+
+#knapp1 {
+    background-color: aqua;
+    font-size: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+
+.maine {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+
+    
+}
+
+
+.over{
+
+    
+    height: 600px;
+    width: 100%;
+
+
+}
+
+.viktig{
+    margin-top: 60px;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.bokser{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 525px;
+    width: 100%;
+
+
+}
+
+#overboks1{
+   background-image: url("https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg");
+   background-position: center center;
+   background-repeat: no-repeat; 
+   background-size: auto; 
+    color: aliceblue;
+
+}
+#overboks2{
+    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
+   background-position: center center;
+   background-repeat: no-repeat; 
+   background-size: auto;
+
+}
+#overboks3{
+    background-image: url("https://www.lmi.no/wp-content/uploads/2017/10/lungekreft-1024x768.jpg");
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: auto;
+
+}
+#overboks4{
+    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
+   background-position: center center;
+   background-repeat: no-repeat; 
+   background-size: auto;
+
+}
+
+.full-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+
+
+.invisible_text p {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    background-color: rgba(50, 50, 200, 0.5);
+    display: none;
+    padding: 25px;
+}
+
+.invisible_text {
+    position: relative;
+}
+
+.invisible_text:hover p {
+    display: block;
+}
+
+
+
+
+.hoved{
+
+    
+
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(12, 1fr);
+    height: 800px;
+    width: 80%;
+    margin-left: 10%;
+   
+
+
+
+
+}
+
+
+.hoved div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+
+
+
+.liten{
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.midi{
+    grid-column: span 6;
+    grid-row: span 1;
+}
+
+.stor{
+    grid-column: span 9;
+    grid-row: span 1;
+}
+
+.hele{
+    grid-column: span 12;
+    grid-row: span 1;
+    border: 3px solid black;
+
+}
+
+
+
+
+
+
+
+
+
+/*fotter*/
+:root {
+    --primary: #222;
+    --KARPEprimary: #ff6f61;
+}
+ 
+#footerid {
+    background-color: var(--primary);
+}
+ 
+.main
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.footer {
+    padding: 30px 40px;
+}
+ 
+.footer-liste {
+    width: 25%;
+}
+
+.footer-liste h3 {
+    font-size: 1.2rem;
+    color: grey;
+    position: relative;
+    margin-bottom: 25px;
+    font-family: Arial, sans-serif;
+}
+ 
+.footer-liste h3::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: var(--KARPEprimary);
+}
+ 
+.footer-liste ul li {
+    color: grey;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+ 
+.footer-linker ul li:hover {
+    color: var(--KARPEprimary);
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+}
+ 
+.footer-linker ul li a {
+    color: white;
+    text-decoration: none;
+}
+ 
+.footer-linker ul li a:hover {
+    color: var(--KARPEprimary);
+}
+
+
+
+
+
+

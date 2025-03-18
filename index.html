@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+       
         .container {
-            max-width: 900px;
+            max-width: 940px;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: 300px 300px 300px 300px 300px;
-            gap: 5px;
+            grid-template-rows: 400px 400px 400px 400px 300px;
+            gap: 25px;
             margin: auto;
         }
 
+
         article {
-            background-color: aquamarine;
+            background-color: rgb(185, 179, 179);
             grid-column: span 3;
         }
 
@@ -37,6 +39,16 @@
         article.xlarge {
             grid-column: span 12;
         }
+
+        .artikkelbilde {
+            height: 70%;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .artikkeltittel {
+            font-size: 40px;
+        }
     </style>
 </head>
 
@@ -50,34 +62,42 @@
 
         <div class="container">
             <article class="medium">
-                Artikkel 1
+                <img class="artikkelbilde" src="https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg" alt="">
+                <h3 class="artikkeltittel">Navn på artikkel</h3>
             </article>
 
             <article class="medium">
-                Artikkel 1
+                <img class="artikkelbilde" src="https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg" alt="">
+                <h3 class="artikkeltittel">Navn på artikkel</h3>
             </article>
 
             <article class="large">
-                Artikkel 1
+                <img class="artikkelbilde" src="https://www.lmi.no/wp-content/uploads/2017/10/lungekreft-1024x768.jpg" alt="">
+                <h3 class="artikkeltittel">Navn på artikkel</h3>
             </article>
 
             <article class="small">
-                Artikkel 1
+                <img class="artikkelbilde" src="https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg" alt="">
+                <h3 class="artikkeltittel">Navn på artikkel</h3>
             </article>
 
             <article class="xlarge">
-                Artikkel 1
+                <img class="artikkelbilde" src="" alt="">
+                <h3 class="artikkeltittel">Navn på artikkel</h3>
             </article>
 
             <article class="small">
-                Artikkel 1
+                <img class="artikkelbilde" src="" alt="">
+                <h3 class="artikkeltittel">Navn på artikkel</h3>
             </article>
 
             <article class="small">
-                Artikkel 1
+                <img class="artikkelbilde" src="" alt="">
+                <h3 class="artikkeltittel">Navn på artikkel</h3>
             </article>
             <article class="small">
-                Artikkel 1
+                <img class="artikkelbilde" src="" alt="">
+                <h3 class="artikkeltittel">Navn på artikkel</h3>
             </article>
 
         </div>
