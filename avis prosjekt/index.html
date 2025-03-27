@@ -8,39 +8,189 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="avisstyle.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+
+
+
+
+
 </head>
 
 <body>
 
-    <nav class="bikkje">
-        <a href="#home">Home
-            <i class="fa-solid fa-house"></i>
-        </a>
-        <a href="#news">News
-            <i class="fa-solid fa-landmark"></i>
-        </a>
-        <div class="dropdown">
-            <button class="dropbtn" id="knapp1">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+
+
+
+
+    <nav class="navbar">
+
+        <div class="navdel1">
+            <a href="index.html"> Logo</a>
+            <a href="index.html">Nyheter
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="tips.html">Tips oss
+                <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+
+
+        </div>
+
+        <div class="navdel2">
+            <div class="input-container">
+                <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                <button id="søkknapp" onclick="søk()">Søk</button>
+                <div class="søk-content" id="søkContent"></div>
+            </div>
+
+        </div>
+
+        <div class="navdel3">
+            <a href="abonner.html">
+                <div class="abonner">
+                    Abonner
+                </div>
+            </a>
+            <a href="logginn.html">
+                <div class="logginn">
+                    Logg inn
+                </div>
+            </a>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="klikk()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="dropdown-content2">
+            <div>
+                <div class="drop1">
+                    <i class="fa-regular fa-circle-user" style="color: white;"></i>
+                    <p class="droptekst">Du er ikke logget inn</p>
+
+                </div>
+                <div class="drop11">
+                    <a href="abonner.html">
+                        <div class="abonner">
+                            Bli medlem
+                        </div>
+                    </a>
+                    <a href="logginn.html">
+                        <div class="logginn">
+                            Logg inn
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="droplinje">
+                <div class="input-container">
+                    <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                    <button id="søkknapp" onclick="søk()">Søk</button>
+                    <div class="søk-content" id="søkContent"></div>
+                </div>
+            </div>
+            <div class="drop3 droplinje">
+                <p>Mørkmodus</p>
+                <button class="knappikon">
+                    <i class="fa-solid fa-toggle-off ikonmørkmodus" style="color: white;"></i>
+                </button>
+            </div>
+            <div class="droplinje">
+                <a href="#">Nyheter
+                    <i class="fa-solid fa-house"></i>
+                </a>
+
             </div>
         </div>
     </nav>
 
-    <div class="maine">
-
-        <div class="over">
-
-            <div class="viktig">
-                <h1>hva skjer i verden nå</h1>
 
 
-            </div>
+    <main class="boksen">
+
+
+        
+
+
+        <div class="container">
+            <article class="medium">
+                <a href="datadelingiNorge.html">
+                    <img class="artikkelbilde"
+                        src="https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg" alt="">
+                    <h3 class="artikkeltittel">Debattinnlegg: slår alarm om datadelingen</h3>
+                </a>
+            </article>
+
+            <article class="medium" class="full-link">
+                <a href="meta-mot-AI.html">
+                    <img class="artikkelbilde"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuHoZVb7nuhapIXYtKSRmHIi0nFnvspY0FjQ&s"
+                        alt="">
+                    <h3 class="artikkeltittel">Meta ønsker å fjerne ai</h3>
+                </a>
+            </article>
+
+            <article class="large">
+                <a href="lungekreft.html">
+                    <img class="artikkelbilde"
+                        src="https://www.lmi.no/wp-content/uploads/2017/10/lungekreft-1024x768.jpg" alt="">
+                    <h3 class="artikkeltittel">Ai oppdager lungekreft</h3>
+                </a>
+            </article>
+
+            <article class="small">
+                <a href="droner-mot-sorgrensen.html">
+                <img class="artikkelbilde"
+                    src=https://www.iphotography.com/wp-content/uploads/2023/03/Drone-Photography-for-Beginners-1.jpg
+                    alt="">
+                <h3 class="artikkeltittel">Droner mot sørgrensen i USA</h3>
+            </a>
+            </article>
+
+            <article class="xlarge">
+                <a href="datadelingiNorge.html">
+                    <img class="artikkelbilde"
+                        src="https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg" alt="">
+                    <h3 class="artikkeltittel">Navn på artikkel</h3>
+                </a>
+            </article>
+
+            <article class="small">
+                <a href="kraftkrise.html">
+                    <img class="artikkelbilde"
+                        src="https://gfx.nrk.no/EA7oca3d3TJxh2vNexUukwx-KjJf-WgnX2uvs7MuWNuQ.jpg" alt="">
+                    <h3 class="artikkeltittel">Kraftkrise</h3>
+                </a>
+            </article>
+
+            <article class="small">
+                <a href="chip.html">
+                    <img class="artikkelbilde"
+                        src="https://premium.vgc.no/v2/images/9d6eb6fe-18c4-4817-a46e-e95595ecba22?fit=crop&format=auto&h=1536&w=2048&s=9ccab2839407149200802332ed7d28737e29707b" alt="">
+                    <h3 class="artikkeltittel">Fra stor kabelsalat til chip</h3>
+                </a>
+            </article>
+            <article class="small">
+                <a href="chatgpt.html">
+                    <img class="artikkelbilde"
+                        src="https://gfx.nrk.no/jhyxTCOHuwvfmxzLo2s0RgnNznJadJtiXbVGxlzdb0LA.jpg" alt="">
+                    <h3 class="artikkeltittel">ChatGPT sprer russisk propaganda</h3>
+                </a>
+            </article>
+
+        </div>
+
+        <div class="over ">
+
+            
+            
 
             <div class="bokser blippy">
 
@@ -52,46 +202,32 @@
                             kvantedatamaskin. Selskapet har laget en «topologisk qubit» ved å kombinere halvledere og
                             superledere i en databrikke som fungerer ved ekstremt lave temperaturer.
 
-                            Teknologien kan gjøre kvantedatamaskiner mer stabile og enklere å feilkorrigere enn dagens
-                            metoder. Foreløpig har Microsoft kun laget åtte qubits, og de kan ennå ikke utføre praktiske
-                            beregninger. Noen forskere er skeptiske til om Microsoft virkelig har oppnådd dette
-                            gjennombruddet, men hvis det stemmer, kan det gi selskapet et stort forsprang i
-                            kvantekappløpet.</p>
+                        </p>
                     </a>
                 </div>
 
                 <div id="overboks2" class="invisible_text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, consequuntur!
-                    </p>
+                    <a href="https://www.digi.no/artikler/debatt-vi-ma-tenke-nytt-om-nodkommunikasjon-br/556815"
+                        class="full-link">
+
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempora suscipit, illo deserunt
+                            autem necessitatibus eum! Quis, minima placeat, in reprehenderit voluptatibus quidem magni
+                            tempore rerum tenetur aut incidunt. Delectus voluptatem ipsam ullam eligendi reprehenderit
+                            placeat. Max
+
+
+                        </p>
+                    </a>
 
                 </div>
                 <div id="overboks3" class="invisible_text">
-                    <p>
-                        Et sykehus i North Yorkshir bruker nå AI teknologi for å oppdage lungekreft.
-                    </p>
+                    <a href="https://www.bbc.com/news/articles/c3e1xdk0d7wo" class="full-link">
+                        <p>
+                            Et sykehus i North Yorkshir bruker nå AI teknologi for å oppdage lungekreft.
+                        </p>
+                    </a>
 
                 </div>
-                <div id="overboks4" class="invisible_text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, consequuntur!
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="conteinarkel">
-
-            <div class="hoved">
-
-
-                <div class="liten"> </div>
-
-
-
 
 
 
@@ -101,20 +237,11 @@
 
 
 
+
+
         </div>
 
-
-
-
-
-
-
-    </div>
-
-
-
-
-
+    </main>
 
 
     <section id="footerid">
@@ -145,20 +272,59 @@
 
 
 
-    <script>
+    <script src="script.js">
 
-        let dropp = document.querySelector(".dropdown .dropdown-content")
-        let knapp = document.querySelector(".dropbtn")
+        function søk() {
+  const søkeord = document.getElementById("søkeord").value.toLowerCase();
+  const søkContent = document.getElementById("søkContent");
+  søkContent.innerHTML = "";
+  søkContent.style.display = "block";
 
-        knapp.addEventListener("click", funk)
+  const links = {
+    biler: ["Meta mot AI", "biler.html"],
+  };
 
-        function funk() {
-            dropp.classList.toggle("blippern")
-        }
+ 
+  if (links[søkeord]) {
+    søkContent.innerHTML = `<a href="${links[søkeord][1]}" onclick="window.location.href='${links[søkeord][1]}'">${links[søkeord][0]}</a>`;
+  } else {
+    søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
+  }
+
+ 
+  setTimeout(function() {
+    søkContent.style.display = "none";
+  }, 5000);
+}
 
 
 
 
+
+const bodyEl = document.querySelector("body")
+const navbarEl = document.querySelector(".navbar")
+const articleEl = document.querySelectorAll("article")
+const overskrifterEl = document.querySelectorAll("a>.artikkeltittel")
+
+function Mørkmodus() {
+    let ikon1 = document.querySelector(".ikonmørkmodus")
+    if (ikon1.classList.contains("fa-toggle-off")) {
+        ikon1.classList.remove("fa-toggle-off")
+        ikon1.classList.add("fa-toggle-on")
+    } else {
+        ikon1.classList.remove("fa-toggle-on")
+        ikon1.classList.add("fa-toggle-off")
+    }
+    bodyEl.classList.toggle("toggleSvart")
+    navbarEl.classList.toggle("toggleBlå")
+    for (let i = 0; i < articleEl.length; i++) {
+        articleEl[i].classList.toggle("toggleArticle")
+    }
+    for (let i = 0; i < overskrifterEl.length; i++) {
+        overskrifterEl[i].classList.toggle("toggleOverskrift")
+    }
+
+}
 
 
 

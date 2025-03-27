@@ -1,0 +1,628 @@
+:root {
+    --blå: rgb(31, 156, 205);
+    --svart: black;
+    --mørkblå: rgb(23, 59, 157);
+    --hvit: white;
+    --grå: grey;
+    --lysblå: lightblue;
+    --articlebakgrunnsfarge:rgb(241, 235, 235);
+    --hvitblå: rgb(219, 219, 247);
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.toggleSvart {
+    background-color: black;
+}
+.toggleBlå {
+    background-color: rgb(12, 62, 141);
+}
+
+.toggleArticle {
+    background-color: rgb(50, 49, 54);
+}
+
+.toggleOverskrift {
+    color: white;
+}
+
+
+
+/*topppiss*/
+
+
+
+
+.logo{
+    height: 100px;
+    width: 100px;
+
+
+
+
+
+
+
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--blå);
+    align-items: center;
+}
+
+.navbar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    font-size: 40px;
+    color: var(--hvit);
+
+}
+
+.navdel1>* {
+    padding: 30px;
+}
+
+.navdel3>* {
+    padding: 7px;
+}
+
+.navdel1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.navdel2 {
+    align-items: center;
+}
+
+.navdel3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.logginn,
+.abonner {
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 2px solid var(--hvit);
+    color: var(--hvit);
+}
+
+.abonner {
+    background-color: var(--hvit);
+    color: var(--blå);
+}
+
+.fa-bars {
+    color: white;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+#søkeord {
+    height: 33px;
+}
+
+#søkknapp {
+    height: 33px;
+    width: 50px;
+    background-color: var(--hvit);
+    border: 1px solid var(--grå);
+}
+
+.dropdown-content2 {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 350px;
+    text-align: center;
+    background-color: inherit;
+    border: 2px solid var(--hvit);
+}
+
+.dropdown-content2  a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.dropdown-content2 > div {
+    border: 1px solid var(--hvit);
+}
+
+
+.dropbtn {
+    background-color: inherit;
+    font-size: 40px;
+    border: none;
+}
+
+.drop1, .drop11{
+    color: var(--hvit);
+    height: fit fit-content;
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.droptekst {
+    font-size: 25px;
+}
+
+.fa-circle-user {
+    font-size: 70px;
+}
+
+.droplinje {
+    color: var(--hvit);
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.ikonmørkmodus {
+    font-size: 34px;
+    margin-left: 20px;
+}
+.knappikon {
+    background-color: inherit;
+    border: none;
+}
+
+.logginnContainer {
+    margin: auto;
+    margin-top: 30vh;
+    height: 400px;
+    width: 400px;
+    border: 13px solid var(--blå);
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px var(--lysblå);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logginnboks {
+    display: block;
+    height: 50px;
+    width: 200px;
+}
+
+.logginntopp {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logginnContainer button {
+    height: 40px;
+    min-width: 120px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 2px solid var(--hvit);
+    color: var(--hvit);
+    background-color: var(--blå);
+    padding: 10px;
+}
+
+
+
+.over {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    height: 600px;
+    width: 100%;
+
+
+}
+
+.boksen {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 70px;
+
+}
+
+
+
+
+
+
+.bokser {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 1000px;
+}
+
+.bokser div {
+    position: relative;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 8px 20px var(--svart);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bokser div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px var(--svart);
+}
+
+#overboks1 {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg');
+}
+
+#overboks2 {
+    background-image: url('https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg');
+}
+
+#overboks3 {
+    background-image: url('https://www.lmi.no/wp-content/uploads/2017/10/lungekreft-1024x768.jpg');
+}
+
+.bokser div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.full-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.invisible_text p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to top, black, transparent);
+    color: var(--hvit);
+    font-size: 1.1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.invisible_text:hover p {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .bokser {
+        grid-template-columns: 1fr;
+    }
+
+    .bokser div {
+        height: 300px;
+    }
+}
+
+
+/*grid system*/
+
+
+.container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 400px 400px 400px 400px 300px;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+
+article {
+    background-color: var(--articlebakgrunnsfarge);
+    grid-column: span 3;
+    /*border: 2px solid black;*/
+}
+
+.small {
+    grid-column: span 4;
+}
+
+article.medium {
+    grid-column: span 6;
+}
+
+article.large {
+    grid-column: span 8;
+}
+
+article.xlarge {
+    grid-column: span 12;
+}
+
+.artikkelbilde {
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+}
+
+.artikkeltittel {
+    font-size: 35px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* søke sak*/
+.søk-content {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    background-color: aquamarine;
+    display: none;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+
+}
+
+
+.søkeord {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    font-size: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*fotter*/
+:root {
+    --primary: #222;
+    --KARPEprimary: #ff6f61;
+}
+
+#footerid {
+    background-color: var(--primary);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 30px 40px;
+}
+
+.footer-liste {
+    width: 25%;
+}
+
+.footer-liste h3 {
+    font-size: 1.2rem;
+    color: grey;
+    position: relative;
+    margin-bottom: 25px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-liste h3::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: var(--KARPEprimary);
+}
+
+.footer-liste ul li {
+    color: grey;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+.footer-linker ul li:hover {
+    color: var(--KARPEprimary);
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+}
+
+.footer-linker ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-linker ul li a:hover {
+    color: var(--KARPEprimary);
+}
+
+/* avis layout */
+.containerArtikkel {
+    max-width: 800px;
+    margin: auto;
+}
+
+.containerOverskrift {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.overskriftArtikkel {
+    font-size: 60px;
+    margin: 20px;
+}
+
+.innledning {
+    font-size: 32px;
+    margin: 20px;
+}
+
+.hovedtekst>p {
+    font-size: 23px;
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+}
+
+.publisertav {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.skrevetav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-circle-user {
+    color: black;
+    padding-right: 10px;
+}
+
+.boldTekst {
+    font-weight: 700;
+}
+
+.hovedtekst>.underoverskrift {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+
+/*Boks med kort oppsummering*/
+
+.oppsummering {
+    border: 2px solid var(--mørkblå);
+    border-radius: 8px;
+    background-color: var(--hvitblå);
+    width: 80%;
+    height: 160px;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    margin: auto;
+}
+
+ul {
+    list-style-type: circle;
+    display: none;
+    flex-direction: column;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.punkterOverskrift {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.visMer {
+    background-color: var(--hvitblå);
+    border: 2px solid var(--mørkblå);
+    border-radius: 30px;
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+}
